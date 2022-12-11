@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>wusheng233聊天系统</title>
+  </head>
+  <style>
+    .button {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      padding: 15px 300px;
+      margin: 15px 300px;
+    }
+    .center {
+      text-align: center;
+    }
+    .button1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #4caf50;
+    }
+
+    .button1:hover {
+      background-color: #4caf50;
+      color: white;
+    }
+    .text {
+      font-size: 20px;
+    }
+    p {
+      color: black;
+      text-shadow: -0.2px 0 black, 0 0.2px black, 0.2px 0 black, 0 -0.2px black;
+      }
+  </style>
+<body>
+<form class="center" action="chat.php" method="get">
+<input class="button button1" type="text" name="words" />
+<input class="center button button1" type="submit" value="发送" />
+</form>
+</body>
+</html>

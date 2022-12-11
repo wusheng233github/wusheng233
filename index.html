@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>wusheng233登录注册系统</title>
+  </head>
+  <style>
+    .button {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      padding: 15px 32px;
+      margin: 4px 2px;
+    }
+    .center {
+      text-align: center;
+    }
+    .button1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #4caf50;
+    }
+
+    .button1:hover {
+      background-color: #4caf50;
+      color: white;
+    }
+    .text {
+      font-size: 20px;
+    }
+    p {
+      color: black;
+      text-shadow: -0.2px 0 black, 0 0.2px black, 0.2px 0 black, 0 -0.2px black;
+    }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+  </style>
+  <body>
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="./mc/">网页版mc</a></li>
+  <li><a href="./me/">关于作者</a></li>
+  <li><a href="./mcvillagerha/">MCVillagerHa下载站</a></li>
+</ul>
+    <form class="center" action="register.php" method="get">
+      <p class="text center">用户名:</p>
+      <input class="center button button1" type="text" name="name" />
+      <br />
+      <p class="text center">密码:</p>
+      <input class="center button button1" type="text" name="password" />
+      <br />
+      <input class="center button button1" type="submit" value="注册" />
+    </form>
+    <br />
+    <br />
+    <form class="center" action="login.php" method="get">
+      <p class="text center">用户名:</p>
+      <input class="center button button1" type="text" name="name" />
+      <br />
+      <p class="text center">密码:</p>
+      <input class="center button button1" type="text" name="password" />
+      <br />
+      <input class="center button button1" type="submit" value="登录" />
+      <p class="text center">登录后下次将不用输入密码，直接点击登录按钮</p>
+    </form>
+    <embed width="1068" height="860" src="/sticksfight.swf" />
+  </body>
+</html>
